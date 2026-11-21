@@ -1,1 +1,365 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwani Rao | Mathematics Research Scholar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e7eb;
+            z-index: 100;
+        }
+
+        nav h2 {
+            font-family: Georgia, serif;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #263449;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 25px;
+            scroll-margin-top: 70px;
+        }
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: 58px;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            color: #2563eb;
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #475569;
+            margin-bottom: 25px;
+        }
+
+        .profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 7px solid white;
+            box-shadow: 0 10px 35px #0002;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            margin-right: 10px;
+        }
+
+        .btn-outline {
+            background: white;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+
+        .heading {
+            font-family: Georgia, serif;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .line {
+            width: 50px;
+            height: 3px;
+            background: #2563eb;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 28px;
+            border: 1px solid #dce3ed;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            font-family: Georgia, serif;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #475569;
+        }
+
+        .publication {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .publication a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8fafc;
+            color: #64748b;
+        }
+
+        @media (max-width: 750px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 12px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .profile {
+                width: 210px;
+                height: 210px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .heading {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>Ashwani Rao</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Academics</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOMEPAGE -->
+<section class="hero">
+    <div>
+        <h1>Ashwani Rao</h1>
+        <h3>Ph.D. Research Scholar</h3>
+
+        <p>
+            Department of Mathematics<br>
+            Institute of Science<br>
+            Banaras Hindu University, Varanasi, India
+        </p>
+
+        <a class="btn" href="files/CV.pdf" target="_blank">
+            Download CV
+        </a>
+
+        <a class="btn btn-outline" href="#publications">
+            Publications
+        </a>
+    </div>
+
+    <img src="images/profile.jpg"
+         alt="Ashwani Rao"
+         class="profile">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="heading">About Me</h2>
+    <div class="line"></div>
+
+    <p>
+        I am a Ph.D. Research Scholar in the Department of
+        Mathematics at the Institute of Science, Banaras Hindu
+        University, Varanasi, India.
+
+        My research interests lie in harmonic analysis,
+        microlocal analysis and partial differential equations.
+        My work focuses particularly on the Stockwell transform,
+        wavefront sets and their applications to Schrödinger
+        equations.
+    </p>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+    <h2 class="heading">Research Interests</h2>
+    <div class="line"></div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Microlocal Analysis</h3>
+            <p>
+                Wavefront sets, singularity analysis and
+                microlocal regularity.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Harmonic Analysis</h3>
+            <p>
+                Fourier analysis, Stockwell transform
+                and time-frequency analysis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Partial Differential Equations</h3>
+            <p>
+                Schrödinger equations, propagation of
+                singularities and PDE analysis.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+    <h2 class="heading">Publications</h2>
+    <div class="line"></div>
+
+    <div class="publication">
+        <h3>Characterizing wavefront sets of the solutions
+        to the time-dependent Schrödinger equations using
+        the Stockwell transform</h3>
+        <p>Journal of Mathematical Analysis and Applications, 2026.</p>
+    </div>
+
+    <div class="publication">
+        <h3>Application of the Stockwell transform to
+        Schrödinger equations with perturbed harmonic oscillators</h3>
+        <p>Journal of Mathematical Physics, 66 (2025), 123510.</p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="heading">Academic Background</h2>
+    <div class="line"></div>
+
+    <div class="publication">
+        <h3>Ph.D. in Mathematics</h3>
+        <p>Banaras Hindu University</p>
+    </div>
+
+    <div class="publication">
+        <h3>M.Sc. in Mathematics</h3>
+        <p>Gurukul Kangri Vishwavidyalaya, 2020</p>
+    </div>
+
+    <div class="publication">
+        <h3>B.Sc. in Mathematics</h3>
+        <p>Dev Sanskriti Vishwavidyalaya, 2018</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="heading">Contact</h2>
+    <div class="line"></div>
+
+    <p>
+        Department of Mathematics<br>
+        Banaras Hindu University<br>
+        Varanasi, Uttar Pradesh, India
+    </p>
+
+    <p>
+        Email: YOUR-EMAIL@example.com
+    </p>
+
+    <p>
+        <a href="https://scholar.google.com/"
+           target="_blank">Google Scholar</a>
+        |
+        <a href="https://orcid.org/"
+           target="_blank">ORCID</a>
+        |
+        <a href="https://github.com/"
+           target="_blank">GitHub</a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Ashwani Rao | Academic Website
+</footer>
+
+</body>
+</html>
