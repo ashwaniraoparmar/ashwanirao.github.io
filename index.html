@@ -5,50 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwani Rao | Mathematics Research Scholar</title>
 
-    <style>
-        <link rel="stylesheet" href="style.css">
-    </style>
+    <!-- Google Fonts: Lora (Academic Serif) & Inter (Clean Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- KaTeX for LaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+
+    <!-- FIXED: Removed <style> wrapper so style.css actually loads -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
 <nav>
-    <h2>Ashwani Rao</h2>
-    <div>
+    <a href="#" class="nav-brand">Ashwani Rao</a>
+    <div class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
         <a href="#education">Academics</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<!-- HOMEPAGE -->
-<section class="hero">
-    <div>
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-content">
+        <span class="badge">CSIR-UGC Senior Research Fellow (SRF)</span>
         <h1>Ashwani Rao</h1>
-        <h3>Ph.D. Research Scholar</h3>
+        <h3>Ph.D. Research Scholar in Mathematics</h3>
 
-        <p>
-            Department of Mathematics<br>
-            Institute of Science<br>
-            Banaras Hindu University, Varanasi, India
+        <p class="affiliation">
+            Department of Mathematics, Institute of Science<br>
+            Banaras Hindu University, Varanasi 221005, India
         </p>
 
-        <a class="btn" href="files/CV.pdf" target="_blank">
-            Download CV
-        </a>
+        <div class="hero-actions">
+            <a class="btn" href="files/CV.pdf" target="_blank">Download CV (PDF)</a>
+            <a class="btn btn-outline" href="#publications">Publications</a>
+        </div>
 
-        <a class="btn btn-outline" href="#publications">
-            Publications
-        </a>
+        <div class="social-pills">
+            <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org/0009-0006-4380-0480" target="_blank">ORCID: 0009-0006-4380-0480</a>
+            <a href="https://github.com/ashwaniraoparmar" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
     </div>
 
-    <img src="images/profile.jpg"
-         alt="Ashwani Rao"
-         class="profile">
-</section>
+    <div class="hero-image">
+        <img src="images/profile.jpg" alt="Ashwani Rao" class="profile">
+    </div>
+</header>
 
 <!-- ABOUT -->
 <section id="about">
@@ -56,15 +71,16 @@
     <div class="line"></div>
 
     <p>
-        I am a Ph.D. Research Scholar in the Department of
-        Mathematics at the Institute of Science, Banaras Hindu
-        University, Varanasi, India.
-
-        My research interests lie in harmonic analysis,
-        microlocal analysis and partial differential equations.
-        My work focuses particularly on the Stockwell transform,
-        wavefront sets and their applications to Schrödinger
-        equations.
+        I am a doctoral research scholar in the Department of Mathematics at the Institute of Science,
+        Banaras Hindu University (BHU), Varanasi, India. My research sits at the intersection of
+        <strong>harmonic analysis</strong>, <strong>microlocal analysis</strong>, and
+        <strong>partial differential equations</strong>.
+    </p>
+    <p>
+        In particular, I investigate time-frequency representations—such as the <strong>Stockwell transform</strong>
+        and <strong>ridgelet transform</strong>—on Gelfand–Shilov and Sobolev spaces, characterizing wavefront sets
+        and studying the propagation of singularities for Schrödinger equations with perturbed harmonic oscillators
+        and sub-quadratic potentials.
     </p>
 </section>
 
@@ -74,71 +90,138 @@
     <div class="line"></div>
 
     <div class="cards">
-
         <div class="card">
             <h3>Microlocal Analysis</h3>
             <p>
-                Wavefront sets, singularity analysis and
-                microlocal regularity.
+                Wavefront sets, Gelfand–Shilov regularity, pseudo-differential operators, and microlocal
+                characterization of singularities.
             </p>
         </div>
 
         <div class="card">
-            <h3>Harmonic Analysis</h3>
+            <h3>Harmonic & Wavelet Analysis</h3>
             <p>
-                Fourier analysis, Stockwell transform
-                and time-frequency analysis.
+                Stockwell transform $S_\varphi f$, ridgelet transform, and time-frequency analysis on
+                function spaces and discrete domains.
             </p>
         </div>
 
         <div class="card">
             <h3>Partial Differential Equations</h3>
             <p>
-                Schrödinger equations, propagation of
-                singularities and PDE analysis.
+                Time-dependent Schrödinger equations with perturbed harmonic oscillators and
+                sub-quadratic potentials.
             </p>
         </div>
-
     </div>
 </section>
 
 <!-- PUBLICATIONS -->
 <section id="publications">
-    <h2 class="heading">Publications</h2>
+    <h2 class="heading">Selected Publications</h2>
     <div class="line"></div>
 
+    <h4 class="sub-heading">Journal Articles</h4>
+
     <div class="publication">
-        <h3>Characterizing wavefront sets of the solutions
-        to the time-dependent Schrödinger equations using
-        the Stockwell transform</h3>
-        <p>Journal of Mathematical Analysis and Applications, 2026.</p>
+        <h3>Characterizing wavefront sets of the solutions to the time-dependent Schrödinger equations using the Stockwell transform</h3>
+        <p class="authors"><strong>A. Rao</strong> et al.</p>
+        <p class="venue"><em>Journal of Mathematical Analysis and Applications</em>, 2026.</p>
+        <div class="pub-links">
+            <details>
+                <summary>Abstract</summary>
+                <p>We characterize the microlocal regularity and wavefront sets of solutions to time-dependent Schrödinger equations via decay properties of the continuous Stockwell transform.</p>
+            </details>
+        </div>
     </div>
 
     <div class="publication">
-        <h3>Application of the Stockwell transform to
-        Schrödinger equations with perturbed harmonic oscillators</h3>
-        <p>Journal of Mathematical Physics, 66 (2025), 123510.</p>
+        <h3>Application of the Stockwell transform to Schrödinger equations with perturbed harmonic oscillators</h3>
+        <p class="authors"><strong>A. Rao</strong> et al.</p>
+        <p class="venue"><em>Journal of Mathematical Physics</em>, 66 (2025), 123510.</p>
+        <div class="pub-links">
+            <a class="pill-link" href="https://doi.org/" target="_blank">DOI</a>
+            <details>
+                <summary>Abstract</summary>
+                <p>We analyze phase-space localization and regularity estimates for Schrödinger equations governed by perturbed harmonic oscillator Hamiltonians using the Stockwell transform.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="publication">
+        <h3>Ridgelet transform on Gelfand–Shilov-type spaces</h3>
+        <p class="authors"><strong>A. Rao</strong> et al.</p>
+        <p class="venue"><em>Mathematical Methods in the Applied Sciences</em>, 2024.</p>
+        <div class="pub-links">
+            <a class="pill-link" href="https://doi.org/" target="_blank">DOI</a>
+        </div>
+    </div>
+
+    <h4 class="sub-heading" style="margin-top: 2rem;">Book Chapters</h4>
+
+    <div class="publication">
+        <h3>Ridgelet Transform on Gelfand–Shilov Spaces of Type $W$</h3>
+        <p class="authors"><strong>A. Rao</strong> et al.</p>
+        <p class="venue">In: <em>Pseudo-Differential Operators and Related Topics</em>, Birkhäuser / Springer, 2025.</p>
     </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education">
-    <h2 class="heading">Academic Background</h2>
+<!-- TALKS & CONFERENCES -->
+<section id="talks">
+    <h2 class="heading">Conference Presentations</h2>
     <div class="line"></div>
 
     <div class="publication">
-        <h3>Ph.D. in Mathematics</h3>
-        <p>Banaras Hindu University</p>
+        <h3>Wavefront Sets and the Stockwell Transform</h3>
+        <p class="venue">National Conference on Mathematical Analysis and Applications (NCMAA-2025), IIT (ISM) Dhanbad, September 2025.</p>
     </div>
 
     <div class="publication">
-        <h3>M.Sc. in Mathematics</h3>
-        <p>Gurukul Kangri Vishwavidyalaya, 2020</p>
+        <h3>Contributed Talk on Time-Frequency Analysis</h3>
+        <p class="venue">National Mathematics Day Symposium, Banaras Hindu University, Varanasi, December 2024.</p>
     </div>
 
     <div class="publication">
-        <h3>B.Sc. in Mathematics</h3>
-        <p>Dev Sanskriti Vishwavidyalaya, 2018</p>
+        <h3>Contributed Talk on Ridgelet Transforms</h3>
+        <p class="venue">International Conference on Recent Advances in Applied Mathematics (RAAM 2024), IIT (BHU) Varanasi, 2024.</p>
+    </div>
+</section>
+
+<!-- EDUCATION & HONORS -->
+<section id="education">
+    <h2 class="heading">Academic Background & Honors</h2>
+    <div class="line"></div>
+
+    <div class="timeline-item">
+        <div class="timeline-year">Ongoing</div>
+        <div>
+            <h3>Ph.D. in Mathematics</h3>
+            <p>Banaras Hindu University, Varanasi — CSIR-UGC Senior Research Fellow (SRF)</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <div>
+            <h3>Joint CSIR-UGC NET (JRF) in Mathematical Sciences</h3>
+            <p>Qualified for Junior Research Fellowship (upgraded to Senior Research Fellowship)</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div>
+            <h3>M.Sc. in Mathematics</h3>
+            <p>Gurukula Kangri Vishwavidyalaya, Haridwar (CGPA: 8.71)</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-year">2018</div>
+        <div>
+            <h3>B.Sc. in Mathematics & Computer Science</h3>
+            <p>Dev Sanskriti Vishwavidyalaya, Haridwar</p>
+        </div>
     </div>
 </section>
 
@@ -147,33 +230,22 @@
     <h2 class="heading">Contact</h2>
     <div class="line"></div>
 
-    <p>
-        Department of Mathematics<br>
-        Banaras Hindu University<br>
-        Varanasi, Uttar Pradesh, India
-    </p>
-
-    <p>
-        Email: YOUR-EMAIL@example.com
-    </p>
-
-    <p>
-        <a href="https://scholar.google.com/"
-           target="_blank">Google Scholar</a>
-        |
-        <a href="https://orcid.org/"
-           target="_blank">ORCID</a>
-        |
-        <a href="https://github.com/"
-           target="_blank">GitHub</a>
-    </p>
+    <div class="contact-box">
+        <p>
+            <strong>Office Address:</strong><br>
+            Department of Mathematics, Institute of Science<br>
+            Banaras Hindu University, Varanasi 221005, Uttar Pradesh, India
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:YOUR-EMAIL@bhu.ac.in">YOUR-EMAIL@bhu.ac.in</a>
+        </p>
+    </div>
 </section>
-<button id="backToTop" title="Back to top">
-    ↑
-</button>
+
+<button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
 <footer>
-    © <span id="year"></span> Ashwani Rao | Academic Website
+    © <span id="year"></span> Ashwani Rao · Department of Mathematics, Banaras Hindu University
 </footer>
 
 <script src="script.js"></script>
